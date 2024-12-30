@@ -1,3 +1,0 @@
-footer:
-  builtWith:
-    other: 使用 {{ .Generator }} 构建
