@@ -1,0 +1,102 @@
+// Raw https://github.com/CaiJimmy/hugo-theme-stack/blob/v3.29.0/assets/scss/partials/menu.scss#L215
+.menu-social {
+    justify-content: space-evenly;
+}
+
+// Raw https://github.com/CaiJimmy/hugo-theme-stack/blob/v3.29.0/assets/scss/partials/footer.scss
+footer.site-footer {
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond(sm) {
+            flex-direction: unset;
+        }
+
+        @include respond(lg) {
+            flex-direction: column;
+        }
+
+        @include respond(xl) {
+            flex-direction: unset;
+        }
+
+        .copyright {
+            color: var(--body-text-color);
+            margin-bottom: unset;
+
+            @include respond(sm) {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            @include respond(lg) {
+                width: unset;
+                margin-bottom: unset;
+            }
+
+            @include respond(xl) {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            @include respond(2xl) {
+                width: unset;
+                margin-bottom: unset;
+            }
+        }
+
+        .record {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            order: 1;
+
+            @include respond(sm) {
+                margin-top: unset;
+            }
+
+            @include respond(lg) {
+                margin-top: 2rem;
+            }
+
+            @include respond(xl) {
+                margin-top: unset;
+            }
+
+            @include respond(2xl) {
+                display: unset;
+                justify-content: unset;
+                order: unset;
+            }
+
+            & > a {
+                font-weight: normal;
+                font-size: 1.2rem;
+                color: var(--body-text-color);
+
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        color: var(--accent-color);
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .powerby {
+        color: var(--body-text-color);
+        font-weight: normal;
+        font-size: 1.2rem;
+
+        a {
+            color: var(--body-text-color);
+        }
+    }
+}
