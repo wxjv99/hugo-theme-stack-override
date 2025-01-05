@@ -3,6 +3,30 @@
     justify-content: space-evenly;
 }
 
+// Raw https://github.com/CaiJimmy/hugo-theme-stack/blob/v3.29.0/assets/scss/partials/article.scss#L22
+.article-list {
+    article {
+        .article-image {
+            img {
+                height: 35vh;
+            }
+        }
+    }
+}
+
+// Raw https://github.com/CaiJimmy/hugo-theme-stack/blob/v3.29.0/assets/scss/partials/layout/article.scss#L18
+.article-page {
+    .main-article {
+        .article-header {
+            .article-image {
+                img {
+                    max-height: 75vh;
+                }
+            }
+        }
+    }
+}
+
 // Raw https://github.com/CaiJimmy/hugo-theme-stack/blob/v3.29.0/assets/scss/partials/footer.scss
 footer.site-footer {
     .info {
